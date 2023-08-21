@@ -106,7 +106,8 @@ function newGame() {
 
 
 function showRandomOrder() {
-    sequenceDisplaying = true; // Set the variable to true when showing sequence
+    
+    sequenceDisplaying = true;
     let i = 0;
     const interval = setInterval(function () {
         visualEffects(randomOrder[i]);
@@ -116,8 +117,9 @@ function showRandomOrder() {
             clearInterval(interval);
             setTimeout(function () {
                 randomGenerator();
-                sequenceDisplaying = false; // Set the variable back to false
+                sequenceDisplaying = false;
             }, 500);
         }
     }, 500);
+    
 }
